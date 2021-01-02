@@ -1,0 +1,348 @@
+*   {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html  {
+    scroll-behavior: smooth;
+}
+
+:root   {
+    --body: #dddddd;
+    --color: #ffffff;
+    --colorh1: #333333;
+    --navColor:#001a33;
+
+        --mainColor: #c1c1c1;
+        --secondaryColor: #000549;
+        --borderColor: #000;
+        --mainText: #001600;
+        --secondaryText: #cccccc;
+        --background: #ffffff;
+        --dotsWrapper: #d9d9d9;
+        --h5: #303030;
+        --preview: #ffdada;
+        --borderColor1: #ff0000;
+        --borderColor2: #ffbdbd;
+        --btnColor: #000;
+        --body: #d8d8d8;
+        --colorA: #003302;
+        --Colorh3: #000000;
+        --navWrapper: #a5a5a5;
+        --body1: #ffffff;
+}
+                /* general */
+body  {
+    background: var(--body);
+}
+
+
+            /* header */
+.container-header video     {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.container-header  {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.div1  {
+    position: absolute;
+}
+
+.div1 h2   {
+    text-align: center;
+    font-weight: 700;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #00e6e6;
+}
+.div1 h2 .name   {
+    color: #ffcc00;
+}
+
+
+ .btn   {
+    border: 2px solid var(--color);
+    background-color: transparent;
+    color: var(--color);
+    font-weight: 700;
+    padding: 8px 19px;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 15px;
+    transition: .6s;
+    margin-left: 15em;
+}
+ .btn i {
+     width: 20px;
+     height: 20px;
+     padding:  0 10px;
+     cursor: grab;
+     text-decoration: none;
+     text-align: center;
+    transform: rotate(90deg);
+}
+
+i {
+    position: relative;
+    top: -5px;
+}
+ .btn:hover   {
+     font-weight: bold;
+     color: #000;
+    background-color: #00ffcc;
+}
+            /* end of header */
+
+            /* nav */
+nav {
+   background: var(--navColor);
+   padding: 1em 15em;
+}
+
+.ul-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.li-container  a {
+    color: var(--color);
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+            /* end of nav */
+
+
+            /*about*/
+.section h1   {
+    padding: 2em 0 0 0;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--colorh1);
+}
+.section h1::after  {
+    content: '';
+    width: 100px;
+    height: 4px;
+    background: var(--colorh1);
+    display: block;
+    position: relative;
+    left: 15.5em;
+    margin-bottom: 2.5em;
+}
+            /* end of about*/
+
+            /* section */    
+.container-flex   {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5em;
+    border-radius: 15px 0 15px 0;
+}
+
+.section1  {
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10em;
+    height: 8em;
+}
+
+.section1 i   {
+    font-size: 35px;
+    padding: 0 5px;
+    color: red;
+}
+.grid h5   {
+    font-size: 31px;
+    color: #303030;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.grid > p {
+    font-size: 18px;
+    text-align: center;
+}
+
+                /*intro wrapper  */
+
+               
+.intro-wrapper   {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    'nav-wrapper nav-wrapper'
+    'left-wrapper right-wrapper' ;
+    grid-template-rows: 3em 30em;
+    border: 2px solid var(--borderColor);
+    /* box-shadow: -8px -8px 25px var(--borderColor); */
+    background: var(--background);
+    border-radius: 8px 9px 0 0;
+    margin: 0 9em;
+}
+
+.nav-wrapper   {
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--navWrapper);
+    border: 2px solid black;
+}
+
+.dots-wrapper  {
+    display: flex;
+    padding: 8px;
+}
+
+.btn-origin  {
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    margin:  0 7px;
+    cursor: grab;
+}
+.btn-origin-1  {
+    background-color: #f30000;
+}
+.btn-origin-2  {
+    background-color: #fcfc00;
+}
+.btn-origin-3  {
+    background-color: #29cc00;
+}
+
+.navigation {
+    margin: 0;
+    padding: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.navigation li  {
+    display: inline-block;
+}
+li  {
+    color: var(--Colorh3);
+    list-style-type: none;
+    padding: 3px 0;
+}
+
+.left-wrapper   {
+    grid-area: left-wrapper;
+    padding-top: 35px;
+}
+
+p  {
+    color: var(--Colorh3);
+}
+
+.profile-pic   {
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid var(--borderColor);
+}
+
+
+.right-wrapper  {
+    grid-area: right-wrapper;
+    display: grid;
+    align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#review-shadow   {
+    background-color: var(--borderColor2);
+    width: 270px;
+    height: 137px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#preview   {
+    width: 300px;
+    border: 2px solid var(--borderColor1);
+    border-radius: 3px;
+    background: var(--preview);
+    position: relative;
+}
+
+ h3  {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: var(--Colorh3);
+}
+
+.corner   {
+    width: 10px;
+    height: 10px;
+    background-color: var(--borderColor1);
+    border: 2px solid var(--borderColor1);
+    border-radius: 50%;
+    position: absolute;
+}
+#corner-br   {
+    top: -5px;
+    left: -5px;
+}
+#cornerb1   {
+    top: -5px;
+    right: -5px;
+}
+#corner-br1   {
+    bottom: -5px;
+    right: -5px;
+}
+#cornerb11   {
+    bottom: -5px;
+    left: -5px;
+}
+            /* end of section */
+
+            /* PROFILE */
+.profile   {
+    margin: 2em 0;
+}
+
+.img img  {
+    width: 100px;
+}
+            /* END OF PROFILE */

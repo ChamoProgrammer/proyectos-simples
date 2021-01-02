@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: center;
+    margin-top: 3rem;
+    background: url(https://www.xtrafondos.com/wallpapers/lineas-de-colores-3057.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.addItems-container{
+    background: url(https://www.freejpg.com.ar/asset/400/a2/a2f2/F100006823.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.addItems-container, .displayItems-container{
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 2px solid #272932;
+    box-shadow: 0 5px 10px #272932;
+}
+
+.addItems-title, .displayItems-title{
+    text-transform: capitalize;
+}
+
+.addItems-title{
+    color: #b6c2d9;
+}
+
+.addItems-action, .displayItems-action{
+    border: 2px solid #272932;
+    padding: 0.5rem 0;
+    text-transform: capitalize;
+    border-radius: 0.5rem;
+    display: none;
+}
+
+.addItems-input{
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid #65496d;
+    width: 100%;
+    font-size: 2rem;
+    padding: 0.5rem;
+    color: #3b2741;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.addItems-submit,.displayItems-clear{
+    display: block;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    outline: none;
+}
+
+.addItems-submit{
+    color: #0051e9;
+    background: #80c7e4;
+    border: 3px solid #b6c2d9;
+    transition: .3s ease;
+}
+
+.addItems-submit:hover{
+    color: #180066;
+    background: #55a3c2;
+}
+
+.displayItems-container{
+    background: url(https://www.freejpg.com.ar/asset/400/a2/a2f2/F100006823.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.displayItems-title{
+    color: #00ca54;
+    margin-bottom: 0.25rem;
+}
+
+.grocery-item{
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    transition:  .5s ease-in-out;
+    margin: 0.5rem 0;
+}
+
+/* .grocery-item:nth-child(even){
+    background: #b7cafb;
+} */
+.grocery-item:hover{
+    background: #b7cafb;
+}
+.grocery-item__title{
+    text-align: left;
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.grocery-item__link{
+    color: red;
+    transition: all 2s linear;   
+}
+
+.grocery-item:hover .grocery-item__link{
+    transform: scale(2);
+}
+
+.displayItems-clear{
+    color: #5d0000;
+    border: 3px solid #4d7ea8;
+    transition: all 2s ease;
+}
+
+.displayItems-clear{
+    color:#2f0f0f;
+    font-weight: bold;
+    font-size: 20px;
+    outline:none;
+    background: #9c6a6a;
+}
+/*Add utility action classes */
+.alert{
+    color: #ff0000;
+    border-color: #ff0000;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.success{
+    color:rgb(255, 241, 47);
+    border-color: rgb(255, 230, 3);
+    display: block;
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 50%;
+    }
+}

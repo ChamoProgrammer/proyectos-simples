@@ -1,0 +1,19 @@
+:root   {
+    --mainColor: #c1c1c1;
+    --secondaryColor: #f0f1ff;
+    --borderColor: #000;
+    --mainText: #ffffff;
+    --secondaryText: #cccccc;
+    --background: #06003f;
+    --dotsWrapper: #06003f;
+    --h5: #303030;
+    --preview: #030021;
+    --borderColor1: #ff0000;
+    --borderColor2: #0c0076;
+    --btnColor: #005c99;
+    --body: #06003f;
+    --colorA: #00b8bf;
+    --Colorh3: #ffffff;
+    --navWrapper: #06003f;
+    --body1: #06003f;
+}

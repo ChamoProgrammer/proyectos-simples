@@ -1,0 +1,83 @@
+
+ body{
+    font-family:sans-serif;
+    padding: 30px;
+    background: #ffefef;
+}
+
+h1{
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #08a3d9;
+    text-transform: uppercase;
+    font-size: 55px;
+    color: #800000;
+    text-transform: uppercase;
+    font-family: 'Hanalei Fill', cursive;
+    letter-spacing: 2px;
+}
+
+.blue {
+    color:#edc543;
+    font-size: 55px;
+    font-family: 'Ravi Prakash', cursive;
+}
+
+.wrapper{
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+
+#balloon-gallery div   {
+background: #ff0000;
+width: 119px;
+height: 120px;
+text-align: center;
+margin-top: 30px;
+border-radius: 100%;
+color: #08a3d9;
+font-size: 44px;
+display: inline-block;
+margin: 2.5px 5px 2.5px 0;
+    /* float: left; */
+}
+
+
+#balloon-gallery div:nth-child(3n){
+    background: #ffce00;
+    color: #ffce00;
+}
+
+#balloon-gallery div:nth-child(3n-1){
+    background:#3f7abe;
+    color:#3f7abe;
+}
+
+#balloon-gallery div:nth-child(5n){
+    background:#84ff53;
+    color:#8e7a8e;
+}
+
+#balloon-gallery div:nth-child(13){
+    background:#8e7a8e;
+    color:#8e7a8e;
+}
+
+#balloon-gallery div:nth-child(10n){
+    background:#ff3300;
+    color: #ff3300;
+}
+
+#balloon-gallery div:nth-child(4n){
+    clear:right;
+}
+
+
+#yay-no-balloons {
+    display: none;
+    color:#ff6f00;
+    font-size: 100px;
+    font-family: 'Croissant One', cursive;
+}
